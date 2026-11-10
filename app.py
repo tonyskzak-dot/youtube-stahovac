@@ -74,7 +74,7 @@ def download():
 
         return response
     
-    catch Exception as e:
+    except Exception as e:
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
